@@ -27,7 +27,7 @@ pub fn catch(_attr: TokenStream, item: TokenStream) -> TokenStream {
             match result {
                 Ok(_) => return,
                 Err(e) => {
-                    if let Some(e) = e.downcast_ref::<anerror::AnerrorPanic>() {
+                    if let Some(e) = e.downcast_ref::<errata::ErrataPanic>() {
                         eprintln!("{e}");
                     } else if let Some(e) = e.downcast_ref::<&str>() {
                         eprintln!("error (at {}:{}:{}): {e}\n{}", file!(), line!(), column!(), std::backtrace::Backtrace::capture());

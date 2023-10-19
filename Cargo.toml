@@ -1,7 +1,10 @@
 [package]
-name = "anerror-macros"
+name = "errata-macros"
 version = "0.1.0"
 edition = "2021"
+
+description = "The proc macro behind errata."
+license = "MIT"
 
 [dependencies]
 quote = "1.0.33"
@@ -9,3 +12,4 @@ syn = { version = "2.0.38", features = ["full"] }
 
 [lib]
 proc-macro = true
+

@@ -1,2 +1,2 @@
-## You're probably looking for [anerror](https://crates.io/crates/anerror).
+## You're probably looking for [errata](https://crates.io/crates/errata).
 
